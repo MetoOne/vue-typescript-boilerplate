@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-    <main class="main-content d-flex flex-column">
+    <div class="main-content d-flex flex-column">
       <transition name="fade">
         <router-view></router-view>
       </transition>
-    </main>
+    </div>
   </div>
 </template>
 <script lang="ts" src="./index.ts"></script>
