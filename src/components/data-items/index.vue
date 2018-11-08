@@ -1,12 +1,9 @@
 <template>
   <div class="items mx-auto col-md-6 col-xs-12">
-    <!-- {responceData && responceData.map((data, i) => {
-      const href = `mailo:${data.email}`;
-      return ( -->
-    <div class="item py-2" v:for="data of responceData">
-      <h4>{{data.name}}</h4>
-      <a class="d-block" href="'mailo':data.email`">{{data.email}}</a>
-      <i>{{data.body}}</i>
+    <div class="item py-2" v-for="item of responseData" :key="item.id">
+      <h4>{{item.name}}</h4>
+      <a class="d-block" href="'mailo':item.email`">{{item.email}}</a>
+      <i>{{item.body}}</i>
     </div>
   </div>
 </template>

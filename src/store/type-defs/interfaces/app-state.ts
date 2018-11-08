@@ -1,3 +1,4 @@
 export interface AppState {
-    value: number
+    responseData: any[];
+    isLoading: boolean;
 }

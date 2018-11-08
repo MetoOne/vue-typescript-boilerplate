@@ -1,10 +1,10 @@
-import {AppState, MutationTypes} from '../type-defs';
+import { AppState, MutationTypes } from '../type-defs';
 
 export const mutations = {
-    [MutationTypes.ADD_VALUE](state: AppState, value: any): void {
-        state.value += value;
-    },
-    [MutationTypes.RESET_VALUE](state: AppState): void {
-        state.value = 0;
-    }
+  [MutationTypes.GET_DATA](state: AppState, value: any[]): void {
+    state.responseData = value;
+  },
+  [MutationTypes.IS_LOADING](state: AppState, value: boolean): void {
+    state.isLoading = value;
+  }
 };

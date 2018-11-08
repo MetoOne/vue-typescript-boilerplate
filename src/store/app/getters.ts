@@ -1,5 +1,6 @@
-import {AppState} from "../type-defs";
+import { AppState } from "../type-defs";
 
 export const getters = {
-    value: (state: AppState): number => state.value
+  isLoading: (state: AppState): boolean => state.isLoading,
+  responseData: (state: AppState): any[] => state.responseData,
 };
